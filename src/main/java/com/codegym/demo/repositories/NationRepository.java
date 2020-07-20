@@ -1,4 +1,8 @@
 package com.codegym.demo.repositories;
 
-public interface NationRepository {
+import com.codegym.demo.models.Nation;
+import org.springframework.data.repository.PagingAndSortingRepository;
+
+public interface NationRepository extends PagingAndSortingRepository<Nation, Long> {
+
 }
