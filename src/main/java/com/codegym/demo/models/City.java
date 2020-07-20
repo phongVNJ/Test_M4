@@ -37,6 +37,19 @@ public class City {
     public City() {
     }
 
+
+    public City(Long id, String name, Nation nation, double area, Long population, double gdp, String description) {
+        this.id = id;
+        this.name = name;
+        this.nation = nation;
+        this.area = area;
+        this.population = population;
+        this.gdp = gdp;
+        this.description = description;
+    }
+
+
+
     public Long getId() {
         return id;
     }
@@ -92,18 +105,6 @@ public class City {
     public void setDescription(String description) {
         this.description = description;
     }
-
-    public City(Long id, String name, Nation nation, double area, Long population, double gdp, String description) {
-        this.id = id;
-        this.name = name;
-        this.nation = nation;
-        this.area = area;
-        this.population = population;
-        this.gdp = gdp;
-        this.description = description;
-    }
-
-
 
 
 
